@@ -1,0 +1,272 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dfdfdf;
+
+}
+
+
+/* header start  */
+
+.my-container{
+    padding:0;
+    color: #fff;
+}
+
+/* Navigation Start-- */
+#my-navigation{
+    /* background-color: indigo; */
+    background: none;
+    border: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+
+#my-navigation .navbar-toggle{
+    display: block;
+    border: 0;
+}
+#my-navigation .navbar-toggle:hover{
+    background:none;
+    cursor: pointer;
+}
+#my-navigation .navbar-header {
+    float: none;
+}
+#my-navigation .navbar-right {
+    float: left !important;
+}
+#my-navigation .icon-bar-left {
+    float: left;
+}
+#my-navigation .icon-bar {
+     background-color: #fff;
+}
+#my-navigation .icon-right{
+   float: right;
+   margin-top: -3px;
+   padding-left: 10px;
+   color: white;
+}
+
+#my-navigation .navbar-brand ,#my-navigation ul li a {
+    color: white ;
+}
+
+/* Carousel-- */
+.carousel .item{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slide01.jpg);
+    background-size: cover;
+}
+.carousel .item-2{
+    background-image: url(../images/slide02.jpg);
+}
+.carousel .item-3{
+    background-image: url(../images/slide03.jpg);
+}
+.carousel .item-4{
+    background-image: url(../images/slide04.jpg);
+}
+.carousel .item-5{
+    background-image: url(../images/slide05.jpg);
+}
+
+
+/* ---BANNER --  */
+.banner-text{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 20;
+}
+
+.banner-text hr {
+    width: 30%;
+}
+.banner-text p {
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.banner-text h1 {
+    font-size: 90px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+
+/* ---two section start here--- */
+.two-section{
+    margin: 50px auto;
+}
+.two-section img{
+    width: 100%;
+}
+.two-section .left , .two-section .right {
+    background-color: #fff;
+    text-align: center;
+    width: 95%;
+}
+.two-section h6 {
+    letter-spacing: 2px;
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.two-section hr {
+    width: 40%;
+    margin: 0 auto;
+    color: grey;
+    height: 0.5px;
+}
+.two-section h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 8px;
+} 
+.two-section p {
+    text-align: left;
+    padding: 25px 30px;
+    font-size: 14px;
+    color: grey;
+    line-height: 25px;
+}
+.two-section button {
+    width: 150px;
+    height: 40px;
+    background:none;
+    margin-top: 10px;
+    border: 2px solid #dfdfdf;
+    margin-bottom: 25px;
+}
+.two-section .right {
+    margin-left: 5%;
+}
+/* ---two section ends here--- */
+
+
+
+/* full-quotes start--- */
+.full-quote{
+    text-align: center;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 100px 0px;
+}
+.full-quote hr ,.four-image-section hr {
+    width: 35%;
+}
+.full-quote p ,.four-image-section p {
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+.full-quote h5 , .four-image-section h5 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 20px 0px;
+}
+
+
+/* ---FOur section start here-- */
+.four-image-section {
+    margin: 100px auto;
+}
+
+.four-image-section h5 {
+    margin-bottom: 100px;
+}
+.four-image-section img{
+    width: 95%;
+    float: left;    
+    margin-bottom:10%;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+}
+
+.four-image-section .left {
+    margin-left: 5%;
+}
+/* ---FOur section ends here-- */
+
+/* ----footer section starts here-- */
+.footer{
+    text-align: center;
+    background: #000;
+    color: grey;
+    padding: 50px 0px;
+}
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
+.footer span {
+    font-size: 25px;
+    padding: 10px;
+}
+.footer span:hover{
+    color: white;
+}
+.footer p {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.footer a:hover{
+    color: white;
+}
+
+/* ----footer section ends here-- */
+
+
+
+
+/* ----media Query section start --  */
+
+@media only screen and (max-width:768px){
+    .my-collapse{
+        padding-right: 15px;
+        padding-left: 15px;
+        border-top: 1px solid grey;
+    }
+    .banner-text p{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .banner-text h1 {
+        font-size: 70px;
+    }
+
+    .two-section .left , .two-section .right {
+        width: 100%;
+    }
+    .two-section .right {
+        margin-left: 0;
+    }
+    .four-img img {
+        width: 100%;
+    }
+    .four-img .left {
+        margin-left: 0;
+    }
+    .full-quote p , .four-image-section p{
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+    .full-quote hr, .four-image-section hr {
+        width: 60%;
+    }
+    .full-quote h5, .four-image-section h5 {
+        font-size: 20px;
+    }
+
+
+}
